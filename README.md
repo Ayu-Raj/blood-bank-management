@@ -1,4 +1,4 @@
-# blood-bank-management
+# Blood-Bank-Management
 Blood Bank Management System using JAVA
 
 ### This Project is built using :-
