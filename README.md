@@ -7,6 +7,7 @@ Blood Bank Management System using JAVA
 #### 2. JAVAFX
 #### 3. Scene Builder
 #### 4. JDBC API
-#### 5. MySQL Database
+#### 5. MySQL Database with mysql-connector library
 #### 6. JFOENIX for material Design
-#### 7. SARXOS for web cam library
+#### 7. javamail - mailing library
+#### 8. SARXOS for web cam library
