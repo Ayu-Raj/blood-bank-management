@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbankk.AuthFXMLController">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="626.0" layoutY="7.0" opacity="0.34" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hospital.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#eb0d0d" layoutX="205.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Authentication">
+         <font>
+            <Font name="Britannic Bold" size="31.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="125.0" layoutY="129.0" prefHeight="55.0" prefWidth="412.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password">
+               <font>
+                  <Font name="Bodoni MT" size="21.0" />
+               </font>
+            </Text>
+            <JFXPasswordField fx:id="pass" onAction="#pass" promptText="******" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="auth" layoutX="261.0" layoutY="227.0" mnemonicParsing="false" onAction="#auth" text="Authenticate" />
+      <Button fx:id="forPass" layoutX="248.0" layoutY="294.0" mnemonicParsing="false" onAction="#forPass" text="Forgot Password" />
+      <JFXProgressBar layoutX="33.0" layoutY="358.0" prefHeight="0.0" prefWidth="577.0" />
+   </children>
+</AnchorPane>

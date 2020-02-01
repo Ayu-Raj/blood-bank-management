@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbankk.DonorFXMLController">
+   <children>
+      <ImageView fitHeight="554.0" fitWidth="718.0" layoutX="316.0" opacity="0.18" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-58.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@blood2.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <GridPane layoutX="30.0" layoutY="49.0" prefHeight="373.0" prefWidth="643.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="480.0" minWidth="10.0" prefWidth="349.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="321.0" minWidth="10.0" prefWidth="294.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name">
+               <font>
+                  <Font name="Bell MT Bold" size="27.0" />
+               </font></Label>
+            <Label text="Age" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bell MT Bold" size="27.0" />
+               </font></Label>
+            <Label text="Contact Number" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bell MT Bold" size="27.0" />
+               </font></Label>
+            <Label text="Blood Group" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Bell MT Bold" size="27.0" />
+               </font></Label>
+            <Label text="Is weight above 45" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Bell MT Bold" size="27.0" />
+               </font></Label>
+            <Label prefHeight="80.0" prefWidth="390.0" text="Any severe disease" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Bell MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label text="Number of units to donated" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Bell MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label text="Gender" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bell MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXRadioButton fx:id="genF" onAction="#genF" text="Female" GridPane.columnIndex="1" />
+                  <JFXRadioButton fx:id="genM" onAction="#genM" text="Male" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="7">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXToggleButton fx:id="di_yes" onAction="#di_yes" text="Yes" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="6">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXToggleButton fx:id="we_yes" onAction="#we_yes" text="Yes" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <RadioButton fx:id="Apos" mnemonicParsing="false" onAction="#Apos" text="A+" />
+                  <RadioButton fx:id="Bpos" mnemonicParsing="false" onAction="#Bpos" text="B+" GridPane.columnIndex="1" />
+                  <RadioButton fx:id="Aneg" mnemonicParsing="false" onAction="#Aneg" text="A-" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="Bneg" mnemonicParsing="false" onAction="#Bneg" text="B-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="Opos" mnemonicParsing="false" onAction="#Opos" text="O+" GridPane.columnIndex="2" />
+                  <RadioButton fx:id="Oneg" mnemonicParsing="false" onAction="#Oneg" text="O-" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="ABpos" mnemonicParsing="false" onAction="#ABpos" text="AB+" GridPane.columnIndex="3" />
+                  <RadioButton fx:id="ABneg" mnemonicParsing="false" onAction="#ABneg" text="AB-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <JFXTextField fx:id="namefield" onAction="#namefieldaction" promptText="Name" GridPane.columnIndex="1" />
+            <JFXTextField fx:id="agefield" onAction="#agefieldaction" promptText="Age &gt;=18" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="contactfield" onAction="#contactfieldaction" promptText="10-digit Mob. No." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <JFXSlider fx:id="d_units" max="5.0" value="1.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Text layoutX="180.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hospital :-">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="lab" layoutX="290.0" layoutY="2.0" prefHeight="25.0" prefWidth="222.0" text="Label" />
+      <JFXToggleButton fx:id="pt" layoutX="539.0" layoutY="436.0" onAction="#pt" text="Print Receipt" />
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="327.0" layoutY="436.0" onAction="#submitaction" ripplerFill="#e4d20c" style="-fx-background-color: #AD94FF;" text="Submit">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

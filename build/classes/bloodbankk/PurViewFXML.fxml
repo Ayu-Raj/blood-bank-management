@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anc" prefHeight="548.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodbankk.PurViewFXMLController">
+   <children>
+      <TableView fx:id="table" layoutX="186.0" layoutY="138.0" prefHeight="507.0" prefWidth="1067.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="id_col" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="n_col" prefWidth="171.0" text="Name" />
+            <TableColumn fx:id="g_col" prefWidth="81.0" text="Gender" />
+            <TableColumn fx:id="p_col" prefWidth="221.0" text="Purpose" />
+            <TableColumn fx:id="u_col" prefWidth="133.0" text="Units Purchased" />
+            <TableColumn fx:id="b_col" prefWidth="107.0" text="Blood Group" />
+            <TableColumn fx:id="c_col" prefWidth="126.0" text="Contact No" />
+            <TableColumn fx:id="date" prefWidth="152.0" text="Date/Time" />
+        </columns>
+      </TableView>
+      <TextField fx:id="filterField" layoutX="3.0" layoutY="568.0" promptText="Search" AnchorPane.topAnchor="568.0" />
+      <Button fx:id="search" layoutX="956.0" layoutY="567.0" mnemonicParsing="false" onAction="#search" text="Search Photo" AnchorPane.rightAnchor="3.0" />
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="908.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gifs/animat-image-color.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="190.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gifs/animat-search-color.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
